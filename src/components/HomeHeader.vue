@@ -40,6 +40,7 @@ li a{
 }
 .flex-header{
     height: 200px;
+    margin:30px 50px;
 }
 .flex-menu{
     line-height: 100px;
