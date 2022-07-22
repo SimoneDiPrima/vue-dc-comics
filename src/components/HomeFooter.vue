@@ -53,7 +53,17 @@
         </figure>
     </div>
     <div class="down-footer">
-      
+        <div>   <button class="button-footer">SIGN UP NOW!</button>  </div>
+        <div>
+            <ul class="footer-menu">
+                <li class="followus"><a href="">FOLLOW US </a></li>
+                <li class="socialFooter-list"><a href=""><img src="../assets/img/footer-twitter.png" alt=""></a></li>
+                <li class="socialFooter-list"><a href=""><img src="../assets/img/footer-youtube.png" alt=""></a></li>
+                <li class="socialFooter-list"><a href=""><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+                <li class="socialFooter-list"><a href=""><img src="../assets/img/footer-periscope.png" alt=""></a></li>
+                <li class="socialFooter-list"><a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
+            </ul>
+        </div>
     </div>
 </footer>
 </template>
@@ -74,21 +84,23 @@ export default{
    position:relative;
    display:flex;
    justify-content:space-between;
-   padding:30px;
-   
+   padding:30px;  
 }
 .down-footer{
-height:150px;
+min-height:150px;
 max-width:100vw;
-background-color: slategray;
+background-color: rgb(58, 49, 49);
 position:absolute;
 left:0;
 right:0;
 top:150%;
+display:flex;
+justify-content:space-between;
+align-items: center;
 }
 img{
     margin-top:-20px;
-    width:100%;
+    max-width:100%;
     height:auto;
     text-align:center;
 }
@@ -97,7 +109,7 @@ img{
 }
 .footer-menu li a{
     line-height: 150%;
-    color:white;
+    color:lightgrey;
     font-weight: lighter;
 }
 
@@ -105,6 +117,20 @@ img{
     color:white;
     margin-top:10px;
 }
-
+.footer-menu .socialFooter-list{
+    margin-right:10px;
+}
+.socialFooter-list{
+    padding:8px; 
+    color:slategray
+}
+.button-footer{
+    margin-left:30px;
+    padding:5px;
+    font-size: 20px;
+    color:white;
+    background-color: rgb(58, 49, 49);
+    border:1px solid dodgerblue;
+}
 
 </style>

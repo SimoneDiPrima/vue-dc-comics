@@ -1,6 +1,7 @@
 <template>
 <div id="DcComics">
-  <HomeHeader/>
+  
+    <HomeHeader/>
   <HomeMain/>
   <HomeFooter/>
 </div>
