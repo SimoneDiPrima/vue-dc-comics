@@ -8,16 +8,12 @@
         <div>
             <nav>
                 <ul class="flex-menu">
-                    <li><a href="">CHARACTERS</a></li>
-                    <li><a href="">COMICS</a></li>
-                    <li><a href="">MOVIES</a></li>
-                    <li><a href="">TV</a></li>
-                    <li><a href="">GAMES</a></li>
-                    <li><a href="">COLLECTIBLES</a></li>
-                    <li><a href="">VIDEO</a></li>
-                    <li><a href="">FANS</a></li>
-                    <li><a href="">NEWS</a></li>
-                    <li><a href="">SHOP</a></li>
+                    <li v-for="link in links" :key="link.text">
+                        <a :href="link.url" 
+                        :class="{ current : link.current}"  >
+                        {{ link.text }}
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -28,10 +24,68 @@
 <script>
 export default{
      name: 'HomeHeader',
+      currentIndex : 0,
+     data(){
+        return{
+        links:[
+  {
+    text: 'Characters',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Comics',
+    url: '#',
+    current: true,
+  },
+  {
+    text: 'Movies',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'TV',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Games',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Collectibles',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Videos',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Fans',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'News',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Shop',
+    url: '#',
+    current: false,
+  },
+]
+
+        }
+     }
 }
 </script>
 
-<style>
+<style scoped>
 li a{
     text-decoration: none;
     color:darkslategray;
@@ -51,7 +105,12 @@ li a{
 .flex-menu{
     line-height: 100px;
     display:flex;
-    
+
+}
+ul li a.current,
+ul li a:hover{
+   text-decoration: underline dodgerblue;
+   color:dodgerblue;
 }
 
 </style>

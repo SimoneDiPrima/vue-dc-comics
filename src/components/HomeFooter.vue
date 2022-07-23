@@ -1,52 +1,29 @@
 <template>
 <footer>
-    
     <div class="top-footer">
         <div class="container">
             <div class="footer-menu">
                 <div class="col">
                         <h4 class="title-footer-menu">DC COMICS</h4>
                     <ul>
-                        <li><a href="">terms of use</a></li>
-                        <li><a href="">privacy policy</a></li>
-                        <li><a href="">Ad choiches</a></li>
-                        <li><a href="">Advertising</a></li>
-                        <li><a href="">Jobs</a></li>
-                        <li><a href="">Subscription</a></li>
-                        <li><a href="">Talent Workshop</a></li>
-                        <li><a href="">CPSC certificates</a></li>
-                        <li><a href="">Ratings</a></li>
+                        <li v-for="link in links" :key="link.text" ><a :href="link.url">{{ link.text }}</a></li>
                     </ul>
                     <h4 class="title-footer-menu">SHOP</h4>
                     <ul>
-                        <li><a href="">shop dc</a></li>
-                        <li><a href="">shop dc collectibles</a></li>
+                         <li v-for="link in FooterShopMenu" :key="link.text"><a href="#">{{ link.text }}</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h4 class="title-footer-menu">DC</h4>
                     <ul>
-                        <li><a href="">terms of use</a></li>
-                        <li><a href="">privacy policy</a></li>
-                        <li><a href="">Ad choiches</a></li>
-                        <li><a href="">Advertising</a></li>
-                        <li><a href="">Jobs</a></li>
-                        <li><a href="">Subscription</a></li>
-                        <li><a href="">Talent Workshop</a></li>
-                        <li><a href="">CPSC certificates</a></li>
-                        <li><a href="">Ratings</a></li>
-                        <li><a href="">Shop help</a></li>
-                        <li><a href="">Contact us</a></li>
+                          <li v-for="link in FooterTopMenu" :key="link.text"><a href="#">{{ link.text }}</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h3 class="title-footer-menu">SITES</h3>
                         <ul>
-                            <li><a href="">DC</a></li>
-                            <li><a href="">MAD Magazine</a></li>
-                            <li><a href="">DC Kids</a></li>
-                            <li><a href="">DC Universe</a></li>
-                            <li><a href="">DC Power Visa</a></li>
+                            <li v-for="website in website" :key="website.text"><a :href="website.url">{{ website.text }}</a></li>
+                           
                         </ul>
                 </div>
             </div>
@@ -60,7 +37,7 @@
             <div><button class="button-footer">SIGN UP NOW!</button></div>
             <div>
                 <ul class="footer-menu">
-                    <li class="followus"><a href="">FOLLOW US</a></li>
+                    <li id="followus"><a href="">FOLLOW US</a></li>
                     <li class="socialFooter-list"><a href=""><img src="../assets/img/footer-twitter.png" alt=""></a></li>
                     <li class="socialFooter-list"><a href=""><img src="../assets/img/footer-youtube.png" alt=""></a></li>
                     <li class="socialFooter-list"><a href=""><img src="../assets/img/footer-facebook.png" alt=""></a></li>
@@ -77,19 +54,218 @@
 <script>
 export default{
      name: 'HomeFooter',
-}
-
-
+     data(){
+        return{
+     FooterTopMenu : [ {
+    text: 'terms of use',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'privacy policy',
+    url: '#',
+    current: true,
+  },
+  {
+    text: 'Ad choiches',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Advertising',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Job',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Subscription',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Talent Workshop',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'CPSC certificates',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Rating',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Shop Help',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Shop Help',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'contact us',
+    url: '#',
+    current: false,
+  }
+  
+  
+],
+FooterShopMenu:[{text: 'shop dc',
+    url: '#',
+    current: false},
+    {text: 'shop dc collectibles',
+    url: '#',
+    current: false},
+    ],
+     links:[
+  {
+    text: 'Characters',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Comics',
+    url: '#',
+    current: true,
+  },
+  {
+    text: 'Movies',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'TV',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Games',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Collectibles',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Videos',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Fans',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'News',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Shop',
+    url: '#',
+    current: false,
+  }],
+    website:[
+  {
+    text: 'Characters',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Comics',
+    url: '#',
+    current: true,
+  },
+  {
+    text: 'Movies',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'TV',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Games',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Collectibles',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Videos',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Fans',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'News',
+    url: '#',
+    current: false,
+  },
+  {
+    text: 'Shop',
+    url: '#',
+    current: false,
+  }],
+  IconsSocialMenu:[{
+    url: `./assets/img/footer-facebook.png`,
+    current: false},
+    {
+    url: `./assets/img/footer-facebook.png`,
+    current: false},
+    { 
+    url: `./assets/img/footer-facebook.png`,
+    current: false}
+   ,
+    {
+    url: `./assets/img/footer-facebook.png`,
+    current: false},
+     {
+    url:`./assets/img/footer-facebook.png`,
+    current: false}
+   
+    ],
+}}}
 </script>
 
 <style>
 
 .top-footer{
     background-image: url("../assets/img/footer-bg.jpg");
-    height:400px;
+    height:500px;
    max-width:100vw;
    position:relative;
    padding:30px;  
+}
+.top-footer ul li,
+.top-footer ul li h4{
+    margin-right:10px;
+}
+.top-footer ul li a,
+.down-footer ul li a
+{
+    text-decoration:none;
 }
 .container{
   margin: 0 auto;
@@ -104,7 +280,7 @@ background-color: rgb(58, 49, 49);
 position:absolute;
 left:0;
 right:0;
-top:135%;
+top:150%;
 line-height:150px;
 
 }
@@ -142,6 +318,9 @@ img{
     color:white;
     background-color: rgb(58, 49, 49);
     border:1px solid dodgerblue;
+}
+#followus a{
+    color:dodgerblue;
 }
 
 </style>
