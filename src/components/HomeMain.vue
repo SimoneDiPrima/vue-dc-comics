@@ -1,6 +1,6 @@
 <template>
 <main id="main">
-    <div>
+    <div class="container">
      <h4> --<i class="fa-solid fa-angle-right arrow"></i> contents goes here <i class="fa-solid fa-angle-left arrow"></i>--  </h4>
     </div>
 </main>
@@ -15,7 +15,10 @@ export default{
 </script>
 
 <style>
-
+.container{
+  margin: 0 auto;
+  max-width:1200px;
+}
 #main{
     height:250px;
    max-width:100vw;
@@ -25,7 +28,6 @@ export default{
 }
 #main h4{
  padding-top:30px;
-   margin-left:30px;
 }
 .arrow{
     font-size:60%;
