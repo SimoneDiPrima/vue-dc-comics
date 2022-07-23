@@ -228,24 +228,6 @@ FooterShopMenu:[{text: 'shop dc',
     url: '#',
     current: false,
   }],
-  IconsSocialMenu:[{
-    url: `./assets/img/footer-facebook.png`,
-    current: false},
-    {
-    url: `./assets/img/footer-facebook.png`,
-    current: false},
-    { 
-    url: `./assets/img/footer-facebook.png`,
-    current: false}
-   ,
-    {
-    url: `./assets/img/footer-facebook.png`,
-    current: false},
-     {
-    url:`./assets/img/footer-facebook.png`,
-    current: false}
-   
-    ],
 }}}
 </script>
 
