@@ -14,23 +14,20 @@ export default{
 
 </script>
 
-<style>
-.container{
-  margin: 0 auto;
-  max-width:1200px;
-}
+<style lang="scss">
 #main{
     height:250px;
    max-width:100vw;
     color:white;
     background-color: black;
     font-size: 1.5rem;
-}
-#main h4{
+    h4{
  padding-top:30px;
-}
-.arrow{
+    .arrow{
     font-size:60%;
+        }
+    }
+    
 }
 
 </style>

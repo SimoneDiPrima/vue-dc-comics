@@ -1,0 +1,23 @@
+@import'vars';
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-style: $font_style;
+    }
+    .container{
+      margin: 0 auto;
+      max-width:1200px;
+      display: flex;
+      justify-content: space-between;
+    }
+    img{
+        height:auto;
+        max-width: 100%;
+      }
+      ul{
+        list-style-type:none;
+      }
+      a {text-decoration: none;}

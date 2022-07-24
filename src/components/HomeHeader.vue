@@ -79,38 +79,31 @@ export default{
     current: false,
   },
 ]
-
-        }
+    }
      }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.flex-header{
+    height: 200px;
+    margin-top:30px;
+    .flex-menu{
+    line-height: 100px;
+    display:flex;
+}
 li a{
     text-decoration: none;
     color:darkslategray;
     font-weight: bold;
     padding:5px;
-}
-.flex-header{
-    height: 200px;
-    margin-top:30px;
-}
-.container{
-  margin: 0 auto;
-  max-width:1200px;
-  display: flex;
-    justify-content: space-between;
-}
-.flex-menu{
-    line-height: 100px;
-    display:flex;
-
-}
-ul li a.current,
-ul li a:hover{
-   text-decoration: underline dodgerblue;
-   color:dodgerblue;
+    &.current,
+    &:hover{
+        text-decoration: underline dodgerblue;
+        color:dodgerblue
+    }
+    
+    }
 }
 
 </style>
