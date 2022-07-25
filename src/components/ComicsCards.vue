@@ -102,24 +102,11 @@ export default{
 </script>
 
 <style lang="scss">
-#main{
-    height:auto;
-   max-width:100vw;
-    color:white;
-    background-color: black;
-    font-size: 1.5rem;
-    .container{
-      margin: 0 auto;
-      max-width:1200px;
-      display:flex;
-      flex-wrap:wrap;
-    }  
-}
 .AllArticle{
     display:flex;
     flex-wrap: wrap;
     flex-basis:calc(100% / 6);
-     align-self: baseline;
+    align-self: baseline;
     flex-grow: 1;
     height:auto;
     padding:10px;
@@ -137,5 +124,4 @@ button{
      padding:5px;
     cursor:pointer;
 }
-
 </style>
