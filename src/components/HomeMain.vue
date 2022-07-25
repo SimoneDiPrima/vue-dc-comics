@@ -101,7 +101,7 @@ export default{
 <style lang="scss">
 #main{
     height:800px;
-   width:100vw;
+   max-width:100vw;
     color:white;
     background-color: black;
     font-size: 1.5rem;
@@ -110,7 +110,6 @@ export default{
       max-width:1200px;
       display:flex;
       flex-wrap:wrap;
-
     }
     h4{
  padding-top:30px;
@@ -124,12 +123,12 @@ export default{
     display:flex;
     flex-wrap: wrap;
      flex-basis:calc(100% / 6);
-     height:auto;
+     height:300px;
     padding:10px;
-    margin: auto 0;
+   margin-top:30px;
+   margin-bottom:30px;
 }
 .SingleArticle{
-  margin-top:20px;
   cursor:pointer;
   align-self: baseline;
  flex-grow: 1;
