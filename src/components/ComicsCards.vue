@@ -7,6 +7,9 @@
                   <figcaption>{{comics.series}}</figcaption>
             </figure>
         </div>
+        <div class="buttonComicsCards">
+               <button>Load More</button>
+        </div>
         
     </div>
 </main>
@@ -100,7 +103,7 @@ export default{
 
 <style lang="scss">
 #main{
-    height:800px;
+    height:660px;
    max-width:100vw;
     color:white;
     background-color: black;
@@ -132,6 +135,16 @@ export default{
   cursor:pointer;
   align-self: baseline;
  flex-grow: 1;
+}
+.buttonComicsCards{
+    margin:40px auto;
+}
+button{
+    background-color: dodgerblue;
+    color:white;
+     font-size:20px;
+     padding:5px;
+      cursor:pointer;
 }
 
 </style>
