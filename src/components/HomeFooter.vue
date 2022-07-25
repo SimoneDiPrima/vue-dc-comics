@@ -250,7 +250,7 @@ background-color: rgb(58, 49, 49);
 position:absolute;
 left:0;
 right:0;
-top:150%;
+top:220%;
 line-height:150px;
     .socialFooter-list{
     padding:8px; 
