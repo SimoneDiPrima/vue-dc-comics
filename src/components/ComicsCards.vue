@@ -2,7 +2,7 @@
 <main id="main">
     <div class="container">
         <div class="AllArticle" v-for="(comics, i) in ComicsArray"  :key="i"  >
-            <figure class="SingleArticle">
+            <figure>
                 <img :src="comics.thumb" alt="">
                   <figcaption>{{comics.series}}</figcaption>
             </figure>
