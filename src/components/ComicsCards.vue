@@ -103,7 +103,7 @@ export default{
 
 <style lang="scss">
 #main{
-    height:660px;
+    height:auto;
    max-width:100vw;
     color:white;
     background-color: black;
@@ -113,38 +113,29 @@ export default{
       max-width:1200px;
       display:flex;
       flex-wrap:wrap;
-    }
-    h4{
- padding-top:30px;
-    .arrow{
-    font-size:60%;
-        }
-    }
-    
+    }  
 }
 .AllArticle{
     display:flex;
     flex-wrap: wrap;
-     flex-basis:calc(100% / 6);
-     height:300px;
+    flex-basis:calc(100% / 6);
+     align-self: baseline;
+    flex-grow: 1;
+    height:auto;
     padding:10px;
-   margin-top:30px;
-   margin-bottom:30px;
-}
-.SingleArticle{
-  cursor:pointer;
-  align-self: baseline;
- flex-grow: 1;
+   margin-top:10px;
+   cursor:pointer;
 }
 .buttonComicsCards{
-    margin:40px auto;
+    margin:0 auto;
+  margin-bottom:50px;
 }
 button{
     background-color: dodgerblue;
     color:white;
      font-size:20px;
      padding:5px;
-      cursor:pointer;
+    cursor:pointer;
 }
 
 </style>
